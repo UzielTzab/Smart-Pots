@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:smart_pots_app/routes/app_routes.dart';
 import 'package:smart_pots_app/utils/colors.dart';
 
-class PlantsTile extends StatelessWidget {
+class PlantTile extends StatelessWidget {
   final String imageUrl;
   final String plantName;
   final String daysToWater;
   final bool isAlert;
-  const PlantsTile(
+  const PlantTile(
       {super.key,
       required this.imageUrl,
       required this.plantName,
@@ -47,7 +47,7 @@ class PlantsTile extends StatelessWidget {
             children: [
               Text(
                 plantName,
-                style: TextStyle(fontSize: 18),
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
               ),
               Text(
                 "Regar en: $daysToWater días",

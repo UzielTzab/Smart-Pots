@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:smart_pots_app/routes/app_routes.dart';
-import 'package:smart_pots_app/screens/app_controller.dart';
 
 void main() {
   runApp(const MainApp());

@@ -14,6 +14,7 @@ class AppController extends StatelessWidget {
       length: 5,
       initialIndex: 1,
       child: Scaffold(
+        resizeToAvoidBottomInset: true,
         backgroundColor: AppColors.primary,
         body: const TabBarView(children: [
           HomeScreen(),
@@ -27,8 +28,8 @@ class AppController extends StatelessWidget {
           unselectedLabelColor: AppColors.secondary,
           indicator: const BoxDecoration(),
           tabs: [
-            Tab(text: "Inicio", icon: Icon(Icons.home)),
-            Tab(text: "Jardin", icon: Icon(Icons.grass)),
+            Tab(text: "Inicio", icon: Icon(Icons.home_outlined)),
+            Tab(text: "Jardin", icon: Icon(Icons.grass_outlined)),
             Tab(text: "Cámara", icon: Icon(Icons.camera_alt_outlined)),
             Tab(
                 text: "Diagnóstico",
